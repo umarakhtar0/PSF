@@ -49,7 +49,7 @@ app.post('/apply', upload.single('file'), (req, res) => {
   }
 
   const mailOptions = {
-    from: '"PSF Website"<psfschoolweb@gmail.com>',  // Replace with your email
+    from: 'psfschoolweb@gmail.com',  // Replace with your email
     to: 'psfschoolweb@gmail.com',   // Replace with your email
     subject: 'Job Application',
     html: `
