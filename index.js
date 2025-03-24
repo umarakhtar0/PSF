@@ -673,6 +673,9 @@ app.post('/study-apply', upload.fields([
 
   sendEmail('psfschoolweb@gmail.com', 'New Study Application Submission', emailBody, attachments);
 });
+app.get('/test', (req, res) => {
+  res.json({ message: "Backend is working!" });
+});
 
 // Start Server
 const PORT = process.env.PORT || 5000;
